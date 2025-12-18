@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: #fcfaf5;
+            color: #2e2e2e;
+            font-family: 'Georgia', serif;
+            padding: 60px;
+        }
+        .container { max-width: 800px; margin: auto; display: flex; gap: 50px; }
+        .info, .form-side { flex: 1; }
+        h2 { text-transform: uppercase; letter-spacing: 3px; font-size: 18px; }
+        p { font-size: 14px; color: #666; }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            background: transparent;
+            font-family: serif;
+        }
+        .submit-btn {
+            background-color: #121212;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+        .submit-btn:hover { background-color: #c5a059; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h2>Visit Us</h2>
+            <p>6640 Washington Street<br>Yountville, CA 94599</p>
+            <p><strong>Phone:</strong> (707) 944-2380</p>
+            <p><strong>Hours:</strong><br>Friday – Sunday: 11:00am – 9:00pm<br>Monday – Thursday: 4:00pm – 9:00pm</p>
+        </div>
+
+        <div class="form-side">
+            <h2>General Inquiries</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea rows="4" placeholder="Your Message"></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
